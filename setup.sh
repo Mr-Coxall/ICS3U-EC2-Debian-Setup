@@ -6,6 +6,9 @@
 
 # you will need to change permissions on the file before you can run it
 # chmod +x ./setup.sh
+#
+# then run as:
+# ./setup.sh --skip-keypress --checkall
 
 # get user name and email address to setup Git
 echo The following is used to setup your GitHub connection
@@ -27,9 +30,10 @@ $ git config --global user.email useEmail
 
 # provision GitHub
 # -> from: https://gist.github.com/juanique/4092969
-ssh-keygen -t rsa -b 4096 -C "$useEmail"
-ssh-add ~/.ssh/id_rsa
-pub=`cat ~/.ssh/id_rsa.pub`
+ssh-keygen -t ed25519 -C "$useEmail"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+pub=`cat ~/.ssh/id_ed25519.pub`
 echo "Using username $githubUser"
 curl -u "$githubUser:$githubPass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" https://api.github.com/user/keys
 
