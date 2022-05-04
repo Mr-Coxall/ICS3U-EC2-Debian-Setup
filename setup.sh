@@ -62,8 +62,9 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh -y
 
-# then remove the dot_files directory 
-# sudo rm -R ~/AWS-Ubuntu-Setup-Script
+# then remove the dot_files directory
+echo -- Removing setup.sh --
+sudo rm -R ~/setup.sh
 
 # reboot
 echo ---
