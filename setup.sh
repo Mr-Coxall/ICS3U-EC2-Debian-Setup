@@ -53,11 +53,6 @@ sudo apt install build-essential -y
 # install C++ linter
 pip3 install cpplint
 
-# ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
-# eval "$(ssh-agent -s)"
-# then copy public key over to GitHub SSH keys
-# cat ~/.ssh/id_ed25519.pub
-
 
 # then remove the dot_files directory 
 # sudo rm -R ~/AWS-Ubuntu-Setup-Script
