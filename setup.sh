@@ -70,17 +70,3 @@ echo ---
 echo -- Rebooting Instance --
 echo ---
 sudo reboot now
-
-
-# after reboot, need to run the following by hand
-
-# provision GitHub
-# then copy public key over to GitHub SSH keys
-# cat ~/.ssh/id_ed25519.pub
-# to test it out
-# ssh -T git@github.com
-
-# configure GitHub CLI
-# gh auth login
-# web method most likely the easiest
-# use existing GitHub SSH keys
