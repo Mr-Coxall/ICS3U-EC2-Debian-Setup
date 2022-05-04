@@ -23,10 +23,10 @@ echo Update and upgrade system
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
 # so you can add in other apt repos
-sudo apt-get install software-properties-common
+sudo apt-get install software-properties-common -y
 
 # load git
-sudo apt install -y git
+sudo apt install git -y
 $ git config --global user.name "$varName"
 $ git config --global user.email useEmail
 
@@ -44,7 +44,7 @@ sudo apt install neofetch -y
 
 # load pip3
 echo Load programs
-sudo apt-get install python3-pip -y
+sudo apt-get install python3-pip
 
 # python3 already installed
 # install python linter
