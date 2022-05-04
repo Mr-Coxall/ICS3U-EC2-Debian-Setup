@@ -22,6 +22,8 @@ read -s -p "Enter your GitHub password for user $githubUser: " githubPass
 echo Update and upgrade system
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
+# so you can add in other apt repos
+sudo apt-get install software-properties-common
 
 # load git
 sudo apt install -y git
