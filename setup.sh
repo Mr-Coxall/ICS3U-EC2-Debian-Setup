@@ -8,7 +8,7 @@
 # chmod +x ./setup.sh
 #
 # then run as:
-# ./setup.sh --skip-keypress --checkall
+# ./setup.sh
 
 # get user name and email address to setup Git
 echo The following is used to setup your GitHub connection
