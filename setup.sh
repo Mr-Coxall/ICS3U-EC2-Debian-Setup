@@ -44,11 +44,11 @@ sudo apt install neofetch -y
 
 # load pip3
 echo Load programs
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip -y
 
 # python3 already installed
 # install python linter
-pip3 install black -y
+pip3 install black
 
 # load C++
 sudo apt install build-essential -y
