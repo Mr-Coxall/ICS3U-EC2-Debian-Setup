@@ -20,7 +20,7 @@ read -s -p "Enter your GitHub password for user $githubUser: " githubPass
 
 # update and upgrade system
 echo Update and upgrade system
-sudo apt-get update -y
+sudo apt-get update
 sudo apt-get dist-upgrade -y
 # so you can add in other apt repos
 sudo apt-get install software-properties-common -y
